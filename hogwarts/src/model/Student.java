@@ -35,4 +35,7 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+    @ManyToOne
+    @JoinColumn(name = "faculty_id")
+    private Faculty faculty
 }

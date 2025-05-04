@@ -44,4 +44,12 @@ public class FacultyService {
     public List<Faculty> getAllFaculties() {
         return facultyRepository.findAll();
     }
+    public List<Faculty> findByNameOrColorIgnoreCase(String value) {
+        return facultyRepository.findByNameIgnoreCaseOrColorIgnoreCase(value, value);
+    }
+    public List<Student> getStudentsByFacultyId(Long id) {
+        return facultyRepository.findById(id)
+                .map(Faculty::getStudents)
+                .orElse(Collections.emptyList());
+    }
 }

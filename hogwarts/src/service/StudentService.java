@@ -1,7 +1,10 @@
 package service;
 
+import model.Faculty;
 import model.Student;
 import repository.StudentRepository;
+
+import java.util.List;
 
 @Service
 public class StudentService {
@@ -27,4 +30,12 @@ public class StudentService {
     public void deleteStudent(Long id) {
         studentRepository.deleteById(id);
     }
-}
+    public List<Student> findByAgeRange(int min, int max) {
+        return studentRepository.findByAgeBetween(min, max);
+    }
+        public Faculty getFacultyByStudentId(Long id) {
+            return studentRepository.findById(id)
+                    .map(Student::getFaculty)
+                    .orElse(null);
+        }
+    }

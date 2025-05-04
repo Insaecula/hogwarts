@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 @Entity
 public class Faculty {
     @Id
@@ -30,4 +32,6 @@ public class Faculty {
     public void setColor(String color) {
         this.color = color;
     }
+    @OneToMany(mappedBy = "faculty")
+    private List<Student> students;
 }
