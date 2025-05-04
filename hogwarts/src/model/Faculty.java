@@ -1,4 +1,4 @@
-package entites;
+package model;
 
 @Entity
 public class Faculty {

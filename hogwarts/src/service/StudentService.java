@@ -1,6 +1,6 @@
 package service;
 
-import entites.Student;
+import model.Student;
 import repository.StudentRepository;
 
 @Service
