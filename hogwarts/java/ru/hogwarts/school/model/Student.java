@@ -1,4 +1,4 @@
-package model;
+package ru.hogwarts.school.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

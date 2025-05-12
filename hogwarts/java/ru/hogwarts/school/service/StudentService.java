@@ -1,8 +1,8 @@
-package service;
+package ru.hogwarts.school.service;
 
-import model.Faculty;
-import model.Student;
-import repository.StudentRepository;
+import ru.hogwarts.school.model.Faculty;
+import ru.hogwarts.school.model.Student;
+import ru.hogwarts.school.repositories.StudentRepository;
 
 import java.util.List;
 

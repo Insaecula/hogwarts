@@ -1,8 +1,8 @@
 package test.java.com.example.hogwarts;
 
-import controller.FacultyController;
-import model.Faculty;
-import service.FacultyService;
+import ru.hogwarts.school.controller.FacultyController;
+import ru.hogwarts.school.model.Faculty;
+import ru.hogwarts.school.service.FacultyService;
 
 import static javax.swing.UIManager.get;
 

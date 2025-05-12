@@ -1,9 +1,9 @@
-package service;
+package ru.hogwarts.school.service;
 
-import model.Faculty;
+import ru.hogwarts.school.model.Faculty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.FacultyRepository;
+import ru.hogwarts.school.repositories.FacultyRepository;
 
 import java.util.List;
 import java.util.Optional;

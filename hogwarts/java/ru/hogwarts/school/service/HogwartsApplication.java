@@ -1,4 +1,4 @@
-package com.example.hogwarts;
+package ru.hogwarts.school.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

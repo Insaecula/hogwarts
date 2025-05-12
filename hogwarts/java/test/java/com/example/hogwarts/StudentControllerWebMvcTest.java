@@ -1,8 +1,8 @@
 package test.java.com.example.hogwarts;
 
-import controller.StudentController;
-import model.Faculty;
-import service.StudentService;
+import ru.hogwarts.school.controller.StudentController;
+import ru.hogwarts.school.model.Faculty;
+import ru.hogwarts.school.service.StudentService;
 
 import static java.nio.file.Paths.get;
 
