@@ -1,5 +1,6 @@
 package model;
 
+import javax.persistence.FetchType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -35,7 +36,7 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "faculty_id")
-    private Faculty faculty
+    private Faculty faculty;
 }
