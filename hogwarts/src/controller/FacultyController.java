@@ -10,8 +10,9 @@ public class FacultyController {
     public List<Faculty> getFacultyByNameOrColor(@RequestParam String value) {
         return facultyService.findByNameOrColorIgnoreCase(value);
     }
-        @GetMapping("/{id}/students")
-        public List<Student> getStudentsOfFaculty(@PathVariable Long id) {
-            return facultyService.getStudentsByFacultyId(id);
-        }
+
+    @GetMapping("/{id}/students")
+    public List<Student> getStudentsOfFaculty(@PathVariable Long id) {
+        return facultyService.getStudentsByFacultyId(id);
     }
+}

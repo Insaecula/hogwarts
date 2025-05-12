@@ -9,6 +9,7 @@ public class Faculty {
     private Long id;
     private String name;
     private String color;
+
     public Long getId() {
         return id;
     }
@@ -32,6 +33,7 @@ public class Faculty {
     public void setColor(String color) {
         this.color = color;
     }
+
     @OneToMany(mappedBy = "faculty")
     private List<Student> students;
 }
